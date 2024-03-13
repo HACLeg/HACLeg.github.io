@@ -7,6 +7,7 @@
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Visual Manipulation with Legs</title>
+  <link rel="icon" type="image/png" href="./static/images/favicon.ico">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -51,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://hacleg.github.io">
+      <a class="navbar-item" href="https://Visual-Manipulation-With-Legs.github.io">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -203,6 +204,9 @@
 </section> -->
 
 
+
+
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -211,7 +215,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            &nbsp &nbsp Animals have the ability to use their arms and legs for both locomotion and manipulation. We envision quadruped robots to have the same versatility. This work presents a system that empowers a quadruped robot to perform object interactions with its legs, drawing inspiration from non-prehensile manipulation techniques. The proposed system, Hybrid Actor Critic Maps for Leg Manipulation (HACLeg), has two main components: a manipulation module and a locomotion module. The manipulation module decides how the leg should interact with the object, trained with reinforcement learning (RL) with point cloud observations and object-centric actions using hybrid actor critic maps. The locomotion module controls the leg movements and body pose adjustments, implemented based on impedance control and Model Predictive Control (MPC). Besides manipulating objects with a single leg, the proposed system can also select from left or right legs based on the critic maps and move the object to distant goals through robot base adjustment. In the experiments, we evaluate the proposed system with the object pose alignment tasks both in simulation and in the real world, demonstrating object manipulation skills with legs beyond previous work. 
+            &nbsp &nbsp Animals have the ability to use their arms and legs for both locomotion and manipulation. We envision quadruped robots to have the same versatility. This work presents a system that empowers a quadruped robot to perform object interactions with its legs, drawing inspiration from non-prehensile manipulation techniques. The proposed system has two main components: a manipulation module and a locomotion module. The manipulation module decides how the leg should interact with the object, trained with reinforcement learning (RL) with point cloud observations and object-centric actions. The locomotion module controls the leg movements and body pose adjustments, implemented based on impedance control and Model Predictive Control (MPC). Besides manipulating objects with a single leg, the proposed system can also select from left or right legs based on the critic maps and move the object to distant goals through robot base adjustment. In the experiments, we evaluate the proposed system with the object pose alignment tasks both in simulation and in the real world, demonstrating object manipulation skills with legs more versatile than previous work. 
           </p>
           <!-- <p>
             Our approach augments neural radiance fields
@@ -241,6 +245,21 @@
     </div>
     <!--/ Abstract. -->
 
+
+    <section class="section">
+  
+      <div class="container is-max-desktop">
+        <div class = "container is-centered has-text-centered">
+            <h2 class="title is-3">System Overview</h2>
+            <img src="./static/images/system_overview_00.png" alt="System Overview" style="width: 100%; height: 150%;">
+        </div>
+    
+      </div>
+    
+    </section>
+
+
+
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -255,18 +274,72 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Object Pushing</h2>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                  <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                         style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                       style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                  <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                         style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                       style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
 
 <section class="section">
-  
-  <div class="container is-max-desktop">
-    <div class = "container is-centered has-text-centered">
-        <h2 class="title is-3">System Overview</h2>
-        <img src="./static/images/system_overview_00.png" alt="System Overview" style="width: 100%; height: 150%;">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Object Flpping</h2>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                  <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                         style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls src="./resources/clips/" width="100%"
+                       style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <br>
+            <br>
+          </td>
+        </tr>
+      </div> 
     </div>
-
   </div>
-
 </section>
+
+
+
+
+
 
 <!-- 
 <section class="section">
