@@ -97,6 +97,8 @@ body {
 
     overflow: hidden;
     border-radius: 10px !important;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .publication-video iframe {
@@ -156,6 +158,3 @@ body {
   border-radius: 5px;
 }
 
-.publication-video {
-  margin-bottom: 10px;
-}
