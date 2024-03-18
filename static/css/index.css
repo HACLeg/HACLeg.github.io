@@ -93,12 +93,12 @@ body {
     position: relative;
     width: 100%;
     height: 56.25%;
-    /* padding-bottom: 56.25%; */
+    padding-bottom: 56.25%;
 
     overflow: hidden;
     border-radius: 10px !important;
     /* margin-bottom: 10px; */
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .publication-video iframe {
