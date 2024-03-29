@@ -112,6 +112,18 @@ body {
 .publication-body img {
 }
 
+
+
+.custom-column {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and is automatically sized based on its width */
+    max-width: 500px; /* Maximum width for the column */
+    margin: auto; /* Center the column within the parent container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .results-carousel {
   overflow: hidden;
 }
