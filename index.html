@@ -235,7 +235,7 @@
         <div class = "container is-centered has-text-centered">
             <h2 class="title is-2">System Overview</h2>
             <img src="./static/images/system_overview_00.png" alt="System Overview" style="width: 100%; height: 150%;">
-            <div class="column is-four-fifths" style="margin-left: 100px; margin-top: 30px;">
+            <div class="column is-full" style="margin-top: 30px;">
             <p style="text-align:justify"> <b>Visual Manipulation with Legs</b>: The operation of our system is divided into several distinct stages 1) A point cloud of the object is obtained through a depth camera mounted in front of the robot. 2) Object point cloud and transformed target pose are passed through our network. 3) The manipulation leg is selected by comparing the maximum Q-value. 4) The pre-contact, contact, and action information is sent to the Low-level control System. 5) The control system directs the Robot to conduct the action with the selected leg through impedance control while the Model Predictive Controller maintains the balance of the non-manipulation leg, the computed torques are sent to the robot.</p>
           </div>
           </div>
@@ -250,8 +250,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full"> <!-- This stretches the video horizontally -->
         <h2 class="title is-2">Video</h2>
-        <div class="publication-video" style="position: relative; overflow: hidden; padding-top: 26.25%; height: 0; border-radius: 20px; "> <!-- Added border-radius here -->
-          <iframe src="https://www.youtube.com/embed/bY7HnZmpH3M?si=y-JkX-koSfggyBmR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 60%; border-radius: 20px;"></iframe> <!-- And here -->
+        <div class="publication-video" style="position: relative; overflow: hidden; height: 0; border-radius: 20px; "> <!-- Added border-radius here -->
+          <iframe src="https://www.youtube.com/embed/bY7HnZmpH3M?si=y-JkX-koSfggyBmR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 20px;"></iframe> <!-- And here -->
         </div>
       </div>
     </div>
@@ -263,21 +263,21 @@
 
 
 
-<section class="section" style="margin-top: -340px;">
+<section class="section">
   <div class="container">
     <h2 class="title is-2 has-text-centered" style="padding-bottom: 10px;">Visualization in the Real World</h2>
     <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">Object Flipping</h2>
     <div class="columns is-centered">
       <!-- First column -->
-      <div class="column" style="display: flex; flex-direction: column; align-items: center;margin-right: -220px">
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+      <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
           <video autoplay muted loop playsinline controls src="./video/ours_rightflip_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Right Flip</h3>
         </div>
       </div>
       <!-- Second column -->
-      <div class="column" style="display: flex; flex-direction: column; align-items: center;margin-left: -220px">
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+      <div class="column" style="display: flex; flex-direction: column; align-items: left;">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: left;">
           <video autoplay muted loop playsinline controls src="./video/ours_leftflip_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Left Flip</h3>
         </div>
@@ -287,37 +287,36 @@
 </section>
 
 
-
 <section class="section">
   <div class="container">
     <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">Object Pushing</h2>
     <div class="columns is-centered">
       <!-- First column -->
-      <div class="column" style="display: flex; flex-direction: column; align-items: center; margin-right: -220px">
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: right;">
+      <div class="column" style="display: flex; flex-direction: column; align-items: center; ">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: right;">
           <video autoplay muted loop playsinline controls src="./video/ours_push_coffe_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Coffee</h3>
         </div>
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
           <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella</h3>
         </div>
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
           <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_down_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella Down</h3>
         </div>
       </div>
       <!-- Second column -->
-      <div class="column" style="display: flex; flex-direction: column; align-items: center; margin-left: -220px">
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+      <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
           <video autoplay muted loop playsinline controls src="./video/ours_push_ham_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Ham</h3>
         </div>
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
           <video autoplay muted loop playsinline controls src="./video/ours_push_toy_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Toy</h3>
         </div>
-        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
           <video autoplay muted loop playsinline controls src="./video/ours_push_mustard_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
           <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Mustard</h3>
         </div>
