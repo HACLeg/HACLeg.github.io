@@ -42,25 +42,6 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://Visual-Manipulation-With-Legs.github.io">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-    </div>
-
-  </div>
-</nav>
 
 
 <section class="hero">
@@ -253,9 +234,11 @@
       <div class="container is-max-desktop">
         <div class = "container is-centered has-text-centered">
             <h2 class="title is-2">System Overview</h2>
-            <h2 class="title is-size-5">Our system is an open-loop design that allows the robot to automatically infer and execute the actions necessary to move objects to the target location.</h2>
             <img src="./static/images/system_overview_00.png" alt="System Overview" style="width: 100%; height: 150%;">
-        </div>
+            <div class="column is-four-fifths" style="margin-left: 100px; margin-top: 30px;">
+            <p style="text-align:justify"> <b>Visual Manipulation with Legs</b>: The operation of our system is divided into several distinct stages 1) A point cloud of the object is obtained through a depth camera mounted in front of the robot. 2) Object point cloud and transformed target pose are passed through our network. 3) The manipulation leg is selected by comparing the maximum Q-value. 4) The pre-contact, contact, and action information is sent to the Low-level control System. 5) The control system directs the Robot to conduct the action with the selected leg through impedance control while the Model Predictive Controller maintains the balance of the non-manipulation leg, the computed torques are sent to the robot.</p>
+          </div>
+          </div>
     
       </div>
     
@@ -265,11 +248,10 @@
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full"> <!-- This stretches the video horizontally -->
         <h2 class="title is-2">Video</h2>
-        <div class="publication-video">
-          <iframe height="500" src="https://www.youtube.com/embed/bY7HnZmpH3M?si=y-JkX-koSfggyBmR"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="publication-video" style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0; border-radius: 20px; "> <!-- Added border-radius here -->
+          <iframe src="https://www.youtube.com/embed/bY7HnZmpH3M?si=y-JkX-koSfggyBmR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 60%; border-radius: 20px;"></iframe> <!-- And here -->
         </div>
       </div>
     </div>
@@ -281,7 +263,7 @@
 
 
 
-<section class="section">
+<section class="section" style="margin-top: -460px;">
   <div class="container">
     <h2 class="title is-2 has-text-centered" style="padding-bottom: 10px;">Visualization in the Real World</h2>
     <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">Object Flipping</h2>
@@ -334,12 +316,12 @@
     <div class="columns is-centered">
       <!-- First column -->
       <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/multi_step1_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
+        <video autoplay muted loop playsinline controls src="./video/multi_step_acc2.mp4" width="100%" style="border-radius: 10px;"></video>
         <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Ham</h3>
       </div>
       <!-- Second column -->
       <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/multi_step_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
+        <video autoplay muted loop playsinline controls src="./video/multi_step_acc1.mp4" width="100%" style="border-radius: 10px;"></video>
         <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Coffee</h3>
       </div>
     </div>
@@ -394,7 +376,7 @@
       </div>
     </div>
 
-    <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Task Implementation Visualization</h2>
+    <h2 class="title is-3" style="text-align: center; padding-bottom: 10px; margin-top: 20px">Simulation Trajectory Visualization</h2>
 <div class="columns is-centered has-text-centered">
   <!-- First row of images -->
   <div class="column is-4">
