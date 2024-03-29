@@ -250,7 +250,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full"> <!-- This stretches the video horizontally -->
         <h2 class="title is-2">Video</h2>
-        <div class="publication-video" style="position: relative; overflow: hidden; padding-top: 56.25%; height: 0; border-radius: 20px; "> <!-- Added border-radius here -->
+        <div class="publication-video" style="position: relative; overflow: hidden; padding-top: 26.25%; height: 0; border-radius: 20px; "> <!-- Added border-radius here -->
           <iframe src="https://www.youtube.com/embed/bY7HnZmpH3M?si=y-JkX-koSfggyBmR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 60%; border-radius: 20px;"></iframe> <!-- And here -->
         </div>
       </div>
@@ -269,12 +269,18 @@
     <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">Object Flipping</h2>
     <div class="columns is-centered">
       <!-- First column -->
-      <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/ours_rightflip_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
+      <div class="column" style="display: flex; flex-direction: column; align-items: center;margin-right: -220px">
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+          <video autoplay muted loop playsinline controls src="./video/ours_rightflip_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Right Flip</h3>
+        </div>
       </div>
       <!-- Second column -->
-      <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/ours_leftflip_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
+      <div class="column" style="display: flex; flex-direction: column; align-items: center;margin-left: -220px">
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+          <video autoplay muted loop playsinline controls src="./video/ours_leftflip_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Left Flip</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -287,23 +293,34 @@
     <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">Object Pushing</h2>
     <div class="columns is-centered">
       <!-- First column -->
-      <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/ours_push_coffe_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Coffee</h3>
-        <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella</h3>
-        <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_down_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella Down</h3>
-        
+      <div class="column" style="display: flex; flex-direction: column; align-items: center; margin-right: -220px">
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: right;">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_coffe_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Coffee</h3>
+        </div>
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella</h3>
+        </div>
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 15px">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_nutella_down_cropped_new.mp4" style="width: 150%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nutella Down</h3>
+        </div>
       </div>
       <!-- Second column -->
-      <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/ours_push_ham_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Ham</h3>
-        <video autoplay muted loop playsinline controls src="./video/ours_push_toy_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Toy</h3>
-        <video autoplay muted loop playsinline controls src="./video/ours_push_mustard_cropped.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Mustard</h3>
+      <div class="column" style="display: flex; flex-direction: column; align-items: center; margin-left: -220px">
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_ham_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Ham</h3>
+        </div>
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_toy_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Toy</h3>
+        </div>
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;margin-top: 15px">
+          <video autoplay muted loop playsinline controls src="./video/ours_push_mustard_cropped_new.mp4" style="width: 100%; border-radius: 10px;"></video>
+          <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Mustard</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -316,13 +333,13 @@
     <div class="columns is-centered">
       <!-- First column -->
       <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/multi_step_acc2.mp4" width="100%" style="border-radius: 10px;"></video>
+        <video autoplay muted loop playsinline controls src="./video/multi_step_acc2_new.mp4" width="100%" style="border-radius: 10px;"></video>
         <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Ham</h3>
       </div>
       <!-- Second column -->
       <div class="column">
-        <video autoplay muted loop playsinline controls src="./video/multi_step_acc1.mp4" width="100%" style="border-radius: 10px;"></video>
-        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Coffee</h3>
+        <video autoplay muted loop playsinline controls src="./video/multi_step_acc1_new.mp4" width="100%" style="border-radius: 10px;"></video>
+        <h3 class="title is-4 has-text-centered" style="margin-top: 20px;">Nuetella</h3>
       </div>
     </div>
   </div>
